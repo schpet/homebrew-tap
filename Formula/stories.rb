@@ -2,10 +2,10 @@ class Stories < Formula
   desc "CLI for pivotal tracker"
   homepage "https://github.com/schpet/stories"
   license "MIT"
-  version "0.4.0"
+  version "0.5.0"
 
-  url "https://github.com/schpet/stories/releases/download/v0.4.0/stories-x86_64-apple-darwin.tar.gz"
-  sha256 "644a5e35d39da6879421da1583a2baa63d4ff0f7ee956ccd64a357e4b92d5758"
+  url "https://github.com/schpet/stories/releases/download/v0.5.0/stories-x86_64-apple-darwin.tar.gz"
+  sha256 "53a2d868f662da848b28d58a9dc486c47f71245b7062f43d8f9c7ea95ca669df"
 
   def install
     bin.install("stories")
