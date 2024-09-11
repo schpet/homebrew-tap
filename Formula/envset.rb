@@ -1,7 +1,7 @@
 class Envset < Formula
   desc "A tool to write environment variables to .env files"
   homepage "https://github.com/schpet/envset"
-  url "https://github.com/schpet/envset.git", tag: "v0.1.7"
+  url "https://github.com/schpet/envset.git", tag: "v0.1.8"
   license "MIT"
 
   depends_on "rust" => :build
