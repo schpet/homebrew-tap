@@ -1,5 +1,5 @@
 class Envset < Formula
-  desc "A command-line tool for setting environment variables in a .env file"
+  desc "command-line tool for setting environment variables in a .env file"
   homepage "https://github.com/schpet/envset"
   version "0.1.17"
   if OS.mac?
