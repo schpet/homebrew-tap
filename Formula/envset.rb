@@ -1,20 +1,20 @@
 class Envset < Formula
-  desc "command-line tool for setting environment variables in a .env file"
+  desc "A command-line tool for setting environment variables in a .env file"
   homepage "https://github.com/schpet/envset"
-  version "0.1.17"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/envset/releases/download/v0.1.17/envset-aarch64-apple-darwin.tar.xz"
-      sha256 "1565088303afc86e1b9cc04ca8d81ff698dc1355644248f63e94137a4df51a69"
+      url "https://github.com/schpet/envset/releases/download/v0.2.0/envset-aarch64-apple-darwin.tar.xz"
+      sha256 "74f4fc56cabc9944b8ba8f141dd3234e5eefbdb5bc5e071bbc29da4c181fe1c0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/envset/releases/download/v0.1.17/envset-x86_64-apple-darwin.tar.xz"
-      sha256 "c286d447074b3ecb270246caa74ad5863c1be8fb37f86ac47f6488a98db60ace"
+      url "https://github.com/schpet/envset/releases/download/v0.2.0/envset-x86_64-apple-darwin.tar.xz"
+      sha256 "29b6b24ccbb1a905bffae81607dc10b0fb0433b2ccfceded6740666d42c81f12"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/schpet/envset/releases/download/v0.1.17/envset-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f4507af1ee59035ba0d1cb6ab6335c0072a0dd455763b0dc5986b47cdc54700c"
+    url "https://github.com/schpet/envset/releases/download/v0.2.0/envset-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "fa7ea7fa7d4a9aee6a971bbec814fa743b377b60347e22da57a44f572ded63d0"
   end
   license "ISC"
 
