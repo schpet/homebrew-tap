@@ -1,25 +1,25 @@
 class Linear < Formula
-  desc "cli tool for linear.app that uses git branch names and directory names to open issues and team pages"
+  desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
   homepage "https://github.com/schpet/linear-cli"
-  version "0.1.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.1.0/linear-aarch64-apple-darwin.tar.xz"
-      sha256 "38387d26057ff5ac9248e40a54d99447d473676626703eb2069e20a818fcd15a"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.2.1/linear-aarch64-apple-darwin.tar.xz"
+      sha256 "20336b381b3b563541d173ef79144d5dfe1bf6388da50d826b1b9f87939a0292"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.1.0/linear-x86_64-apple-darwin.tar.xz"
-      sha256 "45554fb84874b0f4ba0b218d017d35be051c171f7828264ec94c907d0d84669a"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.2.1/linear-x86_64-apple-darwin.tar.xz"
+      sha256 "7d906f303d0f692e954bc1e4126a101ed2801ce1a9a99fd09c9a5083be16b034"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.1.0/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "67fe8596b5f2e9d95926ab000cc1190eb5cd997773e2f5618838d80c970898b9"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.2.1/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cc417ccdb1e20d249dcb7ffd06076bbc85bc17d5c38da2a7e421e06f9e359b9c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.1.0/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fc7c61adf3f1d1f0691cee141e13db9f6d6034e252338841f43523468f08b913"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.2.1/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f11d29153f13600ef5409206b74f4cce59e4121a904fc10fc284f19f6691c60e"
     end
   end
   license "MIT"
