@@ -1,25 +1,25 @@
 class Svbump < Formula
-  desc "A cli for reading and incrementing semvers in JSON, TOML, and YAML files"
+  desc "CLI for reading and incrementing semvers in JSON, TOML, and YAML files"
   homepage "https://github.com/schpet/svbump"
-  version "0.1.5"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/svbump/releases/download/v0.1.5/svbump-aarch64-apple-darwin.tar.xz"
-      sha256 "f56f4c5891236f77d8f7ccc4941beac244c3eeb78b5576996fbcc5643bb7b8ea"
+      url "https://github.com/schpet/svbump/releases/download/v1.0.0/svbump-aarch64-apple-darwin.tar.xz"
+      sha256 "60c9c12e4ee414d1328c621958a3a9539c6f078c14345c635604d76eabda4309"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/svbump/releases/download/v0.1.5/svbump-x86_64-apple-darwin.tar.xz"
-      sha256 "2575599db409752a5d406975db34cab87429afa76197a626fd02c9466de80b52"
+      url "https://github.com/schpet/svbump/releases/download/v1.0.0/svbump-x86_64-apple-darwin.tar.xz"
+      sha256 "e000981c4dcc72bf8e7ef89fbc2a7ffec68d5c1fe66b46595b1931c278bbe341"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/svbump/releases/download/v0.1.5/svbump-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4145f564adde77f27deeed91c5e80bd2d12bd25dfb6c2fe954d5c16481b21bfd"
+      url "https://github.com/schpet/svbump/releases/download/v1.0.0/svbump-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9bb3897a9b525f14611c5cfd265740dc89aa6bb736e039b3a1cb50deff78cab2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/svbump/releases/download/v0.1.5/svbump-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0327942a7be7887dc67e5fb76f36f0e0943896c391e15a12cc2178675f2ae3bc"
+      url "https://github.com/schpet/svbump/releases/download/v1.0.0/svbump-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5085e47d6dfd054a2eef24c445e856d012dad740d776b58d37fe761b6f3aad17"
     end
   end
   license "ISC"
