@@ -1,25 +1,25 @@
 class Changelog < Formula
   desc "CLI for updating a CHANGELOG.md"
   homepage "https://github.com/schpet/changelog"
-  version "0.1.3"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/changelog/releases/download/v0.1.3/changelog-aarch64-apple-darwin.tar.xz"
-      sha256 "bfc1a635148498928644cca88d5e1289070823cf1c5839928344d3f0a24654ac"
+      url "https://github.com/schpet/changelog/releases/download/v1.0.0/changelog-aarch64-apple-darwin.tar.xz"
+      sha256 "e97ee0101a939cdd8f5f76cf0b21dc6f5b30ad6ded6ae3a50c37ed0108a3eb0d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/changelog/releases/download/v0.1.3/changelog-x86_64-apple-darwin.tar.xz"
-      sha256 "42bf4b13ec4e99fd8993c20cee34781141c884d7148d3fe7b02bed26ef4d88a4"
+      url "https://github.com/schpet/changelog/releases/download/v1.0.0/changelog-x86_64-apple-darwin.tar.xz"
+      sha256 "3c8abf1bd983bafb87cc84a99c1e636af6f79c0825493f79daf851423e7033eb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/changelog/releases/download/v0.1.3/changelog-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5569ff12ce708472b165477c8fc1d627e32ca87a69269a79fc6a8715ef792cb8"
+      url "https://github.com/schpet/changelog/releases/download/v1.0.0/changelog-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "516eeb95cde69903339a3a31ce323c17e61f3aaf4b71256eb638a5a4105e9237"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/changelog/releases/download/v0.1.3/changelog-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4808272206889462da5b8a2a45e559fefac1d9830da5ac3e6317c8c482da3e51"
+      url "https://github.com/schpet/changelog/releases/download/v1.0.0/changelog-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2981047f46e622173575cf46bf50c32c1ae83dfdde7e3754d4fddc094562a5d9"
     end
   end
 
