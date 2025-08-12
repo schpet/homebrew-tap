@@ -1,25 +1,25 @@
 class Linear < Formula
   desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
   homepage "https://github.com/schpet/linear-cli"
-  version "0.6.0"
+  version "0.6.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.6.0/linear-aarch64-apple-darwin.tar.xz"
-      sha256 "0eef3f20bcec69e86f9b161137c6429394163241bf6fb2567da8c15db9704449"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.6.1/linear-aarch64-apple-darwin.tar.xz"
+      sha256 "aa1220fcf5c31a04563ce4d5fd366ce32693c1e0af62dcd95c81a08d82eefb52"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.6.0/linear-x86_64-apple-darwin.tar.xz"
-      sha256 "6b9bb603b560e4602b1de146f50f0fa3e08be362dd0b4c8044844858564a7a4d"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.6.1/linear-x86_64-apple-darwin.tar.xz"
+      sha256 "d83ff8ba7f55a59119bf9791f65744c1d0061880cb9688e64c8a24fb9c9be387"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.6.0/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b8020c6acbdd78a25351dbf148105d4f282d41e72b04d92a81d613d340348a9d"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.6.1/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "add230d2bf3e65133dd0da42c3216bdc69b594062c939799b21fde512c1215d9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v0.6.0/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4d2862b81a9d78367e625a466e788e681efd915b60510c8a14e6ebe3f4a06970"
+      url "https://github.com/schpet/linear-cli/releases/download/v0.6.1/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "24140bcc6d9d3ad63faa7211a974e77b77cd8d8abfc9fe2d85034a3d01f24380"
     end
   end
   license "MIT"
