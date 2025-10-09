@@ -1,25 +1,25 @@
 class Jjagent < Formula
   desc "CLI for tracking coding agent changes with jujutsu"
   homepage "https://github.com/schpet/jjagent"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/jjagent/releases/download/v0.2.2/jjagent-aarch64-apple-darwin.tar.xz"
-      sha256 "e19d09047956889a1d063edbd2a1e57af8b1dc7b2f8b43a6806762105b1b9fe8"
+      url "https://github.com/schpet/jjagent/releases/download/v0.2.3/jjagent-aarch64-apple-darwin.tar.xz"
+      sha256 "eb88f45be2fee1ab7e5bf74b7e6aa2b468f620cb62eb2b71ac5935499d8e9ff2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/jjagent/releases/download/v0.2.2/jjagent-x86_64-apple-darwin.tar.xz"
-      sha256 "9df22843cf5e48785bbb78e2cbeb5cc16f9b423be794e7970f427bb7c2ce58c7"
+      url "https://github.com/schpet/jjagent/releases/download/v0.2.3/jjagent-x86_64-apple-darwin.tar.xz"
+      sha256 "54e6b52e05da8ba09b225bfbecc1c886883482bffc707a572991d731b5d28ca5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/jjagent/releases/download/v0.2.2/jjagent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d3b9e200d5e11595cec320da848d8a0a21a4860b61d7424d60ec3133d25b0570"
+      url "https://github.com/schpet/jjagent/releases/download/v0.2.3/jjagent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d85dddfe6318934551e451a066c8d32ad8ef6dd6ee6967a90852ea0c81e14537"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/jjagent/releases/download/v0.2.2/jjagent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bcb8b94743a51139f228bea20fd20474c2a066cad7fa3d680e27ec01691d375e"
+      url "https://github.com/schpet/jjagent/releases/download/v0.2.3/jjagent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "68df88e5950f8b33abf6ab08232cb6440fa2ad3229cbff17e3e803d9c3643d49"
     end
   end
 
