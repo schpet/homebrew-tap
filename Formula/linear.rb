@@ -1,19 +1,19 @@
 class Linear < Formula
   desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
   homepage "https://github.com/schpet/linear-cli"
-  version "1.3.1"
+  version "1.4.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/schpet/linear-cli/releases/download/v1.3.1/linear-aarch64-apple-darwin.tar.xz"
-    sha256 "390066df4784764f2aa23fb9629990b8860a0da742c1239c9673152bb1955312"
+    url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-aarch64-apple-darwin.tar.xz"
+    sha256 "b23825035e0a91e217be238aef6c07405713630072f51e6fb2a3d4d5635842bd"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v1.3.1/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "69a40a9496ac89525d56fa2b70a732c4373978d5841c19c0a958621662ad6ec7"
+      url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "118f50304dd5b1c0c33a9ed553c9bcd764c386c748a4f33c7bdaf5a3f097df3f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v1.3.1/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bc2603385145090e9475102e122e3d32ca96a96931f5628d106220bc9812dc99"
+      url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4cf6636fcd705c27d69d6b2bf2f688395c6a28e25af7c7372ed2e71387bcf558"
     end
   end
   license "MIT"
