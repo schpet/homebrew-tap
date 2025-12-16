@@ -1,19 +1,25 @@
 class Linear < Formula
   desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
   homepage "https://github.com/schpet/linear-cli"
-  version "1.4.0"
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-aarch64-apple-darwin.tar.xz"
-    sha256 "b23825035e0a91e217be238aef6c07405713630072f51e6fb2a3d4d5635842bd"
+  version "1.5.0"
+  if OS.mac?
+    if Hardware::CPU.arm?
+      url "https://github.com/schpet/linear-cli/releases/download/v1.5.0/linear-aarch64-apple-darwin.tar.xz"
+      sha256 "3a737e987fad926beabb31cd16e71d1ef1ed64f52ef4ca45d65149132978e0c5"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/schpet/linear-cli/releases/download/v1.5.0/linear-x86_64-apple-darwin.tar.xz"
+      sha256 "bef98a72ffef748bb21477832ed07aa9234acdf47e6b39dc3b5d6d2ce696f617"
+    end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "118f50304dd5b1c0c33a9ed553c9bcd764c386c748a4f33c7bdaf5a3f097df3f"
+      url "https://github.com/schpet/linear-cli/releases/download/v1.5.0/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b127a4eb76957d370546799174b2400399a81035befafbe93076d5eccd7b0d76"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v1.4.0/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4cf6636fcd705c27d69d6b2bf2f688395c6a28e25af7c7372ed2e71387bcf558"
+      url "https://github.com/schpet/linear-cli/releases/download/v1.5.0/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c5de43eebf876eb0f9f82ff949f0e10eada1939df70b39e87b52942ac308f704"
     end
   end
   license "MIT"
@@ -21,6 +27,7 @@ class Linear < Formula
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
+    "x86_64-apple-darwin":       {},
     "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
@@ -42,6 +49,7 @@ class Linear < Formula
 
   def install
     bin.install "linear" if OS.mac? && Hardware::CPU.arm?
+    bin.install "linear" if OS.mac? && Hardware::CPU.intel?
     bin.install "linear" if OS.linux? && Hardware::CPU.arm?
     bin.install "linear" if OS.linux? && Hardware::CPU.intel?
 
