@@ -1,25 +1,25 @@
 class Mdmd < Formula
   desc "A TUI markdown viewer and navigator"
   homepage "https://github.com/schpet/mdmd"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/mdmd/releases/download/v0.3.1/mdmd-aarch64-apple-darwin.tar.xz"
-      sha256 "d5c691174526945e762b4015b18ebef14c389404a5814f85cb67f716ebdccd8a"
+      url "https://github.com/schpet/mdmd/releases/download/v0.4.0/mdmd-aarch64-apple-darwin.tar.xz"
+      sha256 "219316475725d55d661bef046f2ad04c590a95a26fe6229e678eb6856d47eefe"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/mdmd/releases/download/v0.3.1/mdmd-x86_64-apple-darwin.tar.xz"
-      sha256 "da55083f0a552d494d103b22250c667315a6bb244859b06c2b3f6792561c70be"
+      url "https://github.com/schpet/mdmd/releases/download/v0.4.0/mdmd-x86_64-apple-darwin.tar.xz"
+      sha256 "cca883f644504407cbc960a49555e229063c52c4c25a7804fbf57425e8cb7a36"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/mdmd/releases/download/v0.3.1/mdmd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1fffa12f4b668fa1e08912a20202c959fb77bf8470ad943ccf770428ed618be5"
+      url "https://github.com/schpet/mdmd/releases/download/v0.4.0/mdmd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "12368461abc379739762e137c8adb07d6c1000a8b17564ff19a9843e2209b72c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/mdmd/releases/download/v0.3.1/mdmd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "80a791349e1aa7cd8d16d174b30a0da583ebb97ff9095f5b3ff0c2ce773fd067"
+      url "https://github.com/schpet/mdmd/releases/download/v0.4.0/mdmd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "037cecb87fd3ba580ac3398930d12c2b474d86bbb260b5de1c616d3e8ee1ab50"
     end
   end
   license "MIT"
