@@ -1,25 +1,25 @@
 class Linear < Formula
   desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
   homepage "https://github.com/schpet/linear-cli"
-  version "2.4.0"
+  version "2.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.4.0/linear-aarch64-apple-darwin.tar.xz"
-      sha256 "a894db789faf6833eccbabde681e2bcf2a4acd45bd0123205bf8d6bd1ba6905d"
+      url "https://github.com/schpet/linear-cli/releases/download/v2.5.0/linear-aarch64-apple-darwin.tar.xz"
+      sha256 "6d11eb5a0ee2aa10d24625d23c605bf56987a94741e60bb9817f87b123a9a00b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.4.0/linear-x86_64-apple-darwin.tar.xz"
-      sha256 "67b5fdfd0d2fa0c5b014938dbb1a29803e195f358839f84cb6d8d2c926a2b625"
+      url "https://github.com/schpet/linear-cli/releases/download/v2.5.0/linear-x86_64-apple-darwin.tar.xz"
+      sha256 "f57c7acc974c1bc01c0ac141658a2fd380e36776b85f15da9fcbf2e824c0823c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.4.0/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3c4833b5f41b1db220eee8714b9258046d5ecbc396318bf35a0e85388f3bd9a6"
+      url "https://github.com/schpet/linear-cli/releases/download/v2.5.0/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c8ddd7fb478ff23cd752026eb609f25ef91cc36cb1b55900db9f182f4aeb47b5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.4.0/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9ac30ba0c75cdd2503303b883155bdc588c1af8abaeeb2754091b88cda0892c7"
+      url "https://github.com/schpet/linear-cli/releases/download/v2.5.0/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "62accf1eb36c31e897f8490e826182f012b9a4b3a2c0d3bf8c8dde906039c3ea"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Linear < Formula
   end
 
   def install
-    bin.install "linear" if OS.mac? && Hardware::CPU.arm?
-    bin.install "linear" if OS.mac? && Hardware::CPU.intel?
-    bin.install "linear" if OS.linux? && Hardware::CPU.arm?
-    bin.install "linear" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "linear"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "linear"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "linear"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "linear"
+    end
 
     install_binary_aliases!
 
