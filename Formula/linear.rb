@@ -1,28 +1,28 @@
 class Linear < Formula
-  desc "CLI tool for linear.app that uses git branch names and directory names to open issues and team pages"
+  desc "Work with Linear issues, projects and teams from the command line"
   homepage "https://github.com/schpet/linear-cli"
-  version "2.6.0"
+  version "3.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.6.0/linear-aarch64-apple-darwin.tar.xz"
-      sha256 "b9abdd4b5aec14459e434a2899203757de8ae847f055eae4f1faee7bb1fbc078"
+      url "https://github.com/schpet/linear-cli/releases/download/v3.0.0/linear-aarch64-apple-darwin.tar.xz"
+      sha256 "85eb84e795544a577adc17b96f8b00771bcec94f38d26442fd7d561cd82336f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.6.0/linear-x86_64-apple-darwin.tar.xz"
-      sha256 "08aba19af4f00629e5e89ab04017d31d18573fbc9dc922280828702fdae27a3f"
+      url "https://github.com/schpet/linear-cli/releases/download/v3.0.0/linear-x86_64-apple-darwin.tar.xz"
+      sha256 "723c32e044453818f0b539c2dd8da20a815a9683442499058e1069a711f726ab"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.6.0/linear-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "55cc4a6b2489a403ad9eb80f612dfa841287bfa16b98390bb4d4e072d79e2361"
+      url "https://github.com/schpet/linear-cli/releases/download/v3.0.0/linear-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f6580185f3a07c558c64de44506d7ae56c13615c7d2139e5cd22ff3b03822fcd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schpet/linear-cli/releases/download/v2.6.0/linear-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bbcb9d365308bc3728a1ec9913ad1880f88c0ce68767383297e348c057f35b8d"
+      url "https://github.com/schpet/linear-cli/releases/download/v3.0.0/linear-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5064a63a7e6a8b5893a550e138c0a7ba373aad65d425dde6b2b66b50a6c10289"
     end
   end
-  license "MIT"
+  license "ISC"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
